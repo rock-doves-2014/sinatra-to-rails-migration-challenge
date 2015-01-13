@@ -1,0 +1,183 @@
+/*border: 1px black solid;*/
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  width: 1350px;
+  height: 900px;
+  content: "";
+  background-image: url("/assets/background-rainbow.jpg");
+}
+
+.content {
+  width: 1150px;
+  height: 500px;
+  padding: 0px 20px 20px 20px;
+  display: block;
+}
+
+/* BUTTONS */
+.smash, .again {
+  padding-top: 25px;
+  margin-left: 35%;
+  display: none;
+}
+
+#scr_btn {
+  height: 50px;
+  width: 150px;
+  background-color: #7CFC00;
+  font-size: 18px;
+  border-style: 5px dotted;
+  border-color: #3300FF;
+  border-radius: 5px;
+}
+
+#aga_btn {
+  height: 50px;
+  width: 150px;
+  background-color: #3300FF;
+  font-size: 18px;
+  border-style: 5px dotted;
+  border-color: #7CFC00;
+  border-radius: 5px;
+  color: white;
+}
+
+/* LEFT DIV SMASHER */
+.left {
+  display: inline-block;
+  width: 500px;
+  float: left;
+}
+
+.page_title, .instructions, .selected_flavors, .login_prompt {
+  color: black;
+  width: 500px;
+  height: 40px;
+  background-color: white;
+  z-index: 0;
+  opacity: 0.8;
+  display: inline-block;
+  text-align: center;
+}
+
+.instructions, .login_prompt {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.results {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 48px;
+  height: 300px;
+  background-color: white;
+  z-index: 0;
+  opacity: 0.8;
+  display: none;
+}
+
+/* MIDDLE DIV SMASHER */
+.flavors {
+  display: inline-block;
+  width: 400px;
+  height: 600px;
+}
+
+.flav_wrap {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+}
+
+.flavor:hover  {
+  -moz-box-shadow: 0 0 10px black;
+  -webkit-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 20px black;
+  border-radius: 25px;
+}
+
+.flavor {
+  position: relative;
+  margin-top: 45px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+
+.speech {
+  position: absolute;
+  display: none;
+  margin-top: -10%;
+  margin-left: -1%
+}
+
+/* RIGHT DIV SMASHER */
+.variety_bags {
+  display: inline-block;
+  width: 250px;
+  float: right;
+}
+
+#image {
+  width: 180px;
+  height: 95px;
+  padding-bottom: 25px;
+}
+
+
+/* MIDDLE DIV MAIN / LOGIN */
+.user_auth {
+  display: inline-block;
+  margin-top: 10%;
+  margin-left: 10%;
+
+  background-color: white;
+  opacity: 0.8;
+}
+
+#home_nav {
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+}
+
+li {
+  padding: 5px;
+  margin-right: -3%;
+}
+
+#login, #signup {
+  padding: 25px;
+}
+
+
+/* CSS FROM SKELETON */
+
+/*#welcome_nav {
+  display: flex;
+  list-style: none;
+  position: relative;
+  left: 32%;
+}*/
+
+h1 {
+  text-align: center;
+  width: 800px;
+}
+
+nav a {
+  padding: 5px;
+}
+
+nav a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: #36402F;
+  color: white;
+}
